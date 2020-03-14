@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <executable name="dist/default/debug\WaterMeter_P060917_.X.debug.hex">
+    <memory name="program">
+      <units>bytes</units>
+      <length>131072</length>
+      <used>9439</used>
+      <free>121633</free>
+    </memory>
+    <memory name="data">
+      <units>bytes</units>
+      <length>3862</length>
+      <used>295</used>
+      <free>3567</free>
+    </memory>
+  </executable>
+</project>

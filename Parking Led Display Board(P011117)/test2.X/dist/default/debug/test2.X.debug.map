@@ -1,0 +1,3277 @@
+Microchip MPLAB XC8 Compiler V1.45 ()
+
+Linker command line:
+
+-W-3 --edf=C:\Program Files\Microchip\xc8\v1.45\dat\en_msgs.txt -cs \
+  -h+dist/default/debug\test2.X.debug.sym \
+  --cmf=dist/default/debug\test2.X.debug.cmf -z -Q18F67K22 \
+  -oC:\Users\DiXiT\AppData\Local\Temp\s9jo.2 \
+  -Mdist/default/debug/test2.X.debug.map -E1 -ver=XC8 -ASTACK=0134h-0f15h \
+  -pstack=STACK -ACODE=00h-01FFFFh -ACONST=00h-01FFFFh \
+  -ASMALLCONST=01000h-010FFhx496 \
+  -AMEDIUMCONST=01000h-0FFFFh,011000h-01FFFFh -ACOMRAM=01h-05Fh \
+  -AABS1=00h-0F15h -ABIGRAM=01h-0F15h \
+  -ARAM=060h-0FFh,0100h-01FFhx14,0F00h-0F15h -ABANK0=060h-0FFh \
+  -ABANK1=0100h-01FFh -ABANK2=0200h-02FFh -ABANK3=0300h-03FFh \
+  -ABANK4=0400h-04FFh -ABANK5=0500h-05FFh -ABANK6=0600h-06FFh \
+  -ABANK7=0700h-07FFh -ABANK8=0800h-08FFh -ABANK9=0900h-09FFh \
+  -ABANK10=0A00h-0AFFh -ABANK11=0B00h-0BFFh -ABANK12=0C00h-0CFFh \
+  -ABANK13=0D00h-0DFFh -ABANK14=0E00h-0EFFh -ABANK15=0F00h-0F15h \
+  -ASFR=0F16h-0F5Fh,0F60h-0FFCh \
+  -preset_vec=00h,intcode=08h,intcodelo=018h,powerup,init -pramtop=01000h \
+  -psmallconst=SMALLCONST -pmediumconst=MEDIUMCONST -pconst=CONST \
+  -AFARRAM=00h-00h -ACONFIG=0300000h-030000Dh -pconfig=CONFIG \
+  -AIDLOC=0200000h-0200007h -pidloc=IDLOC -AEEDATA=0F00000h-0F003FFh \
+  -peeprom_data=EEDATA \
+  -prdata=COMRAM,nvrram=COMRAM,nvbit=COMRAM,rbss=COMRAM,rbit=COMRAM \
+  -pfarbss=FARRAM,fardata=FARRAM,nvFARRAM=FARRAM \
+  -pintsave_regs=BIGRAM,bigbss=BIGRAM,bigdata=BIGRAM -pbss=RAM \
+  -pidata=CODE,irdata=CODE,ibigdata=CODE,ifardata=CODE -prparam=COMRAM \
+  C:\Users\DiXiT\AppData\Local\Temp\s9jo.obj \
+  dist/default/debug\test2.X.debug.obj 
+
+Object code version is 3.11
+
+Machine type is 18F67K22
+
+Call graph: (short form)
+
+
+
+
+                Name                               Link     Load   Length Selector   Space Scale
+C:\Users\DiXiT\AppData\Local\Temp\s9jo.obj
+                init                                11A      11A        4        C       0
+                reset_vec                             0        0        6        0       0
+                idloc                            200000   200000        8   200000       0
+                config                           300000   300000        E   300000       0
+dist/default/debug\test2.X.debug.obj
+                intcodelo                            18       18      102        C       0
+                intcode                               8        8        6        4       0
+                temp                                 4F       4F        1        1       1
+                smallconst                         1000     1000       10      800       0
+                text62                             2344     2344        2      808       0
+                text61                             20E6     20E6       24      808       0
+                text60                             2334     2334        8      808       0
+                text59                             1F28     1F28       34      808       0
+                text58                             22EE     22EE       10      808       0
+                text57                             22DE     22DE       10      808       0
+                text56                             1CA6     1CA6       52      808       0
+                text55                             216C     216C       1E      808       0
+                text54                             1010     1010      282      808       0
+                text53                             1E02     1E02       40      808       0
+                text52                             212C     212C       22      808       0
+                intcode_body                       17AC     17AC       DC      808       0
+                text50                             2342     2342        2      808       0
+                text49                             20C2     20C2       24      808       0
+                text48                             2328     2328        C      808       0
+                text47                             1DC0     1DC0       42      808       0
+                text46                             22CC     22CC       12      808       0
+                text45                             209E     209E       24      808       0
+                text44                             2258     2258       16      808       0
+                text43                             2242     2242       16      808       0
+                text42                             22BA     22BA       12      808       0
+                text41                             200A     200A       28      808       0
+                text40                             1E80     1E80       3E      808       0
+                text39                             21C2     21C2       1C      808       0
+                text38                             1C52     1C52       54      808       0
+                text37                             164C     164C      160      808       0
+                text35                             1EBE     1EBE       36      808       0
+                text34                             194E     194E       B8      808       0
+                text33                             214E     214E       1E      808       0
+                text32                             207A     207A       24      808       0
+                text31                             222C     222C       16      808       0
+                text30                             231A     231A        E      808       0
+                text29                             2212     2212       1A      808       0
+                text28                             233C     233C        6      808       0
+                text27                             2282     2282       14      808       0
+                text26                             1CF8     1CF8       44      808       0
+                text25                             230C     230C        E      808       0
+                text24                             1FB8     1FB8       2A      808       0
+                text23                             21F8     21F8       1A      808       0
+                text22                             22A8     22A8       12      808       0
+                text21                             2056     2056       24      808       0
+                text20                             22FE     22FE        E      808       0
+                text19                             1BFE     1BFE       54      808       0
+                text18                             226E     226E       14      808       0
+                text17                             1A06     1A06       96      808       0
+                text16                             21A6     21A6       1C      808       0
+                text15                             2296     2296       12      808       0
+                text14                             1888     1888       C6      808       0
+                text13                             1D7E     1D7E       42      808       0
+                text12                             1FE2     1FE2       28      808       0
+                text11                             148C     148C      1C0      808       0
+                text10                             2032     2032       24      808       0
+                text9                              1E42     1E42       3E      808       0
+                text8                              210A     210A       22      808       0
+                text7                              1F8A     1F8A       2E      808       0
+                text6                              1D3C     1D3C       42      808       0
+                text5                              218A     218A       1C      808       0
+                text4                              1A9C     1A9C       92      808       0
+                text3                              1EF4     1EF4       34      808       0
+                text2                              1B2E     1B2E       70      808       0
+                text1                              1F5C     1F5C       2E      808       0
+                text0                              1292     1292      1FA      808       0
+                cstackCOMRAM                         2A       2A       24        1       1
+                cstackBANK0                          BB       BB       25       60       1
+                cstackBANK1                         129      129        B      100       1
+                bssBANK1                            100      100       29      100       1
+                dataBANK0                            E0       E0       1A       60       1
+                bssBANK0                             60       60       5B       60       1
+                dataCOMRAM                           4E       4E        1        1       1
+                bssCOMRAM                             1        1       29        1       1
+                cinit                              1B9E     1B9E       60      808       0
+                idataBANK0                         21DE     21DE       1A      808       0
+                idataCOMRAM                        2346     2346        1      808       0
+
+TOTAL           Name                               Link     Load   Length     Space
+        CLASS   STACK          
+
+        CLASS   CODE           
+                intcodelo                            18       18      102         0
+                intcode                               8        8        6         0
+                init                                11A      11A        4         0
+                reset_vec                             0        0        6         0
+                text62                             2344     2344        2         0
+                text61                             20E6     20E6       24         0
+                text60                             2334     2334        8         0
+                text59                             1F28     1F28       34         0
+                text58                             22EE     22EE       10         0
+                text57                             22DE     22DE       10         0
+                text56                             1CA6     1CA6       52         0
+                text55                             216C     216C       1E         0
+                text54                             1010     1010      282         0
+                text53                             1E02     1E02       40         0
+                text52                             212C     212C       22         0
+                intcode_body                       17AC     17AC       DC         0
+                text50                             2342     2342        2         0
+                text49                             20C2     20C2       24         0
+                text48                             2328     2328        C         0
+                text47                             1DC0     1DC0       42         0
+                text46                             22CC     22CC       12         0
+                text45                             209E     209E       24         0
+                text44                             2258     2258       16         0
+                text43                             2242     2242       16         0
+                text42                             22BA     22BA       12         0
+                text41                             200A     200A       28         0
+                text40                             1E80     1E80       3E         0
+                text39                             21C2     21C2       1C         0
+                text38                             1C52     1C52       54         0
+                text37                             164C     164C      160         0
+                text35                             1EBE     1EBE       36         0
+                text34                             194E     194E       B8         0
+                text33                             214E     214E       1E         0
+                text32                             207A     207A       24         0
+                text31                             222C     222C       16         0
+                text30                             231A     231A        E         0
+                text29                             2212     2212       1A         0
+                text28                             233C     233C        6         0
+                text27                             2282     2282       14         0
+                text26                             1CF8     1CF8       44         0
+                text25                             230C     230C        E         0
+                text24                             1FB8     1FB8       2A         0
+                text23                             21F8     21F8       1A         0
+                text22                             22A8     22A8       12         0
+                text21                             2056     2056       24         0
+                text20                             22FE     22FE        E         0
+                text19                             1BFE     1BFE       54         0
+                text18                             226E     226E       14         0
+                text17                             1A06     1A06       96         0
+                text16                             21A6     21A6       1C         0
+                text15                             2296     2296       12         0
+                text14                             1888     1888       C6         0
+                text13                             1D7E     1D7E       42         0
+                text12                             1FE2     1FE2       28         0
+                text11                             148C     148C      1C0         0
+                text10                             2032     2032       24         0
+                text9                              1E42     1E42       3E         0
+                text8                              210A     210A       22         0
+                text7                              1F8A     1F8A       2E         0
+                text6                              1D3C     1D3C       42         0
+                text5                              218A     218A       1C         0
+                text4                              1A9C     1A9C       92         0
+                text3                              1EF4     1EF4       34         0
+                text2                              1B2E     1B2E       70         0
+                text1                              1F5C     1F5C       2E         0
+                text0                              1292     1292      1FA         0
+                cinit                              1B9E     1B9E       60         0
+                idataBANK0                         21DE     21DE       1A         0
+                idataCOMRAM                        2346     2346        1         0
+
+        CLASS   CONST          
+
+        CLASS   SMALLCONST     
+                smallconst                         1000     1000       10         0
+
+        CLASS   MEDIUMCONST    
+
+        CLASS   COMRAM         
+                temp                                 4F       4F        1         1
+                cstackCOMRAM                         2A       2A       24         1
+                dataCOMRAM                           4E       4E        1         1
+                bssCOMRAM                             1        1       29         1
+
+        CLASS   ABS1           
+
+        CLASS   BIGRAM         
+
+        CLASS   RAM            
+
+        CLASS   BANK0          
+                cstackBANK0                          BB       BB       25         1
+                dataBANK0                            E0       E0       1A         1
+                bssBANK0                             60       60       5B         1
+
+        CLASS   BANK1          
+                cstackBANK1                         129      129        B         1
+                bssBANK1                            100      100       29         1
+
+        CLASS   BANK2          
+
+        CLASS   BANK3          
+
+        CLASS   BANK4          
+
+        CLASS   BANK5          
+
+        CLASS   BANK6          
+
+        CLASS   BANK7          
+
+        CLASS   BANK8          
+
+        CLASS   BANK9          
+
+        CLASS   BANK10         
+
+        CLASS   BANK11         
+
+        CLASS   BANK12         
+
+        CLASS   BANK13         
+
+        CLASS   BANK14         
+
+        CLASS   BANK15         
+
+        CLASS   SFR            
+
+        CLASS   FARRAM         
+
+        CLASS   CONFIG         
+                config                           300000   300000        E         0
+
+        CLASS   IDLOC          
+                idloc                            200000   200000        8         0
+
+        CLASS   EEDATA         
+
+
+
+SEGMENTS        Name                           Load    Length   Top    Selector   Space  Class
+
+                reset_vec                      000000  000006  000006         0       0  CODE    
+                bssCOMRAM                      000001  00004F  000050         1       1  COMRAM  
+                intcode                        000008  000006  00000E         4       0  CODE    
+                intcodelo                      000018  000106  00011E         C       0  CODE    
+                bssBANK0                       000060  00009A  0000FA        60       1  BANK0   
+                bssBANK1                       000100  000034  000134       100       1  BANK1   
+                smallconst                     001000  000010  001010       800       0  SMALLCON
+                text54                         001010  001337  002347       808       0  CODE    
+                idloc                          200000  000008  200008    200000       0  IDLOC   
+                config                         300000  00000E  30000E    300000       0  CONFIG  
+
+
+UNUSED ADDRESS RANGES
+
+        Name                Unused          Largest block    Delta
+        BANK0            0000FA-0000FF                6
+        BANK1            000134-0001FF               CC
+        BANK10           000A00-000AFF              100
+        BANK11           000B00-000BFF              100
+        BANK12           000C00-000CFF              100
+        BANK13           000D00-000DFF              100
+        BANK14           000E00-000EFF              100
+        BANK15           000F00-000F15               16
+        BANK2            000200-0002FF              100
+        BANK3            000300-0003FF              100
+        BANK4            000400-0004FF              100
+        BANK5            000500-0005FF              100
+        BANK6            000600-0006FF              100
+        BANK7            000700-0007FF              100
+        BANK8            000800-0008FF              100
+        BANK9            000900-0009FF              100
+        BIGRAM           000050-00005F               10
+                         0000FA-0000FF                6
+                         000134-000F15              DE2
+        CODE             000006-000007                2
+                         00000E-000017                A
+                         00011E-000FFF              EE2
+                         002347-01FFFF            1DCB9
+        COMRAM           000050-00005F               10
+        CONST            000006-000007                2
+                         00000E-000017                A
+                         00011E-000FFF              EE2
+                         002347-01FFFF            1DCB9
+        EEDATA           F00000-F003FF              400
+        MEDIUMCONST      002347-00FFFF             DCB9
+                         011000-01FFFF             F000
+        RAM              0000FA-0000FF                6
+                         000134-000F15              100
+        SFR              000F16-000FFC               4A
+        SMALLCONST       002347-01FFFF              100
+        STACK            000134-000F15              DE2
+
+                                  Symbol Table
+
+?_Xor_check                                cstackBANK0  0000BB
+?i2_Xor_check                              cstackCOMRAM 00002A
+Clear_Data@n                               cstackBANK1  000129
+Delay_ms@time                              cstackBANK1  000129
+Delay_ms@y                                 cstackBANK1  00012B
+Display_LED_Indication@Id                  cstackBANK1  000129
+INT0_SetInterruptHandler@InterruptHandler  cstackBANK1  000129
+SPI_Read@TempVar                           cstackBANK0  0000BB
+SPI_Write@command                          cstackBANK1  00012A
+SPI_Write@response                         cstackBANK1  000129
+TMR0_SetInterruptHandler@InterruptHandler  cstackBANK1  000129
+Xor_check@data_value                       cstackBANK0  0000BB
+Xor_check@length                           cstackBANK0  0000BD
+Xor_check@xor                              cstackBANK0  0000C1
+Xor_check@xor_value                        cstackBANK0  0000BF
+Zigbee_data_Store_Buffer@a                 cstackCOMRAM 00002A
+_ADCON0                                    (abs)        000FC2
+_ADCON0bits                                (abs)        000FC2
+_ADCON1                                    (abs)        000FC1
+_ADCON2                                    (abs)        000FC0
+_ADC_Initialize                            text31       00222C
+_ADDRESS_long_1                            dataBANK0    0000E0
+_ADDRESS_long_2                            dataBANK0    0000EE
+_ADDRESS_short_1                           dataBANK0    0000EA
+_ADDRESS_short_2                           dataBANK0    0000F8
+_ADRESH                                    (abs)        000FC4
+_ADRESL                                    (abs)        000FC3
+_ALT_ON                                    bssBANK0     0000A7
+_ANCON0                                    (abs)        000F25
+_ANCON1                                    (abs)        000F24
+_ANCON2                                    (abs)        000F23
+_AdcRef                                    smallconst   00100A
+_CHECK                                     bssCOMRAM    000027
+_CRC                                       bssBANK0     000099
+_Clear_Data                                text35       001EBE
+_Count1                                    bssBANK0     0000B1
+_Count2                                    bssBANK0     0000B0
+_Count_LED                                 bssCOMRAM    000015
+_DATA                                      bssCOMRAM    000026
+_DATA_LENGHT                               smallconst   00100E
+_DATA_RX                                   bssBANK0     0000B3
+_DATA_TX                                   bssBANK0     0000B8
+_Delay_ms                                  text16       0021A6
+_Delta                                     bssBANK0     00007C
+_Device_ID                                 bssBANK0     0000AF
+_Display_LED_Indication                    text34       00194E
+_EEADR                                     (abs)        000F62
+_EECON1bits                                (abs)        000F7F
+_EECON2                                    (abs)        000F7E
+_EEDATA                                    (abs)        000F61
+_ERROR                                     bssCOMRAM    000017
+_EXT_INT_Initialize                        text29       002212
+_F_BUZZER                                  bssCOMRAM    000008
+_F_Buzzer                                  bssBANK0     0000AB
+_F_Calling                                 bssCOMRAM    000001
+_F_ERROR                                   bssCOMRAM    000016
+_F_ID_SEND                                 bssCOMRAM    000006
+_F_ID_Send                                 bssCOMRAM    000009
+_F_IdSet                                   bssCOMRAM    00001D
+_F_Input                                   bssCOMRAM    000020
+_F_LDR_STATUS                              bssBANK0     0000A3
+_F_LED1                                    bssBANK0     0000A8
+_F_MSG                                     bssBANK0     0000A6
+_F_Receive                                 bssBANK0     0000A2
+_F_SetID                                   bssCOMRAM    000013
+_HEADER_LENGHT                             smallconst   00100D
+_ID_READ                                   bssCOMRAM    00000A
+_ID_READ_Store                             bssBANK0     0000A4
+_ID_SET                                    bssBANK0     0000AE
+_INT0_CallBack                             text61       0020E6
+_INT0_DefaultInterruptHandler              text62       002344
+_INT0_ISR                                  text60       002334
+_INT0_InterruptHandler                     bssBANK0     000089
+_INT0_SetInterruptHandler                  text30       00231A
+_INTCON2bits                               (abs)        000FF1
+_INTCONbits                                (abs)        000FF2
+_INTERRUPT_Initialize                      text28       00233C
+_INTERRUPT_InterruptManagerHigh            intcode      000008
+_INTERRUPT_InterruptManagerLow             intcodelo    000018
+_INTTRUPT                                  bssCOMRAM    000029
+_InitSPI                                   text32       00207A
+_InputRead                                 bssCOMRAM    00001E
+_LATA                                      (abs)        000F89
+_LATB                                      (abs)        000F8A
+_LATC                                      (abs)        000F8B
+_LATD                                      (abs)        000F8C
+_LATE                                      (abs)        000F8D
+_LATF                                      (abs)        000F8E
+_LATG                                      (abs)        000F8F
+_LED_FRAME                                 bssBANK0     00008F
+_LENGTH                                    bssCOMRAM    000028
+_LQI                                       bssCOMRAM    000024
+_Light                                     bssBANK0     000078
+_Nilp                                      bssCOMRAM    00000B
+_OSCCON                                    (abs)        000FD3
+_OSCCON2                                   (abs)        000F64
+_OSCILLATOR_Initialize                     text27       002282
+_OSCTUNE                                   (abs)        000F9B
+_PAN_ID_1                                  dataBANK0    0000E8
+_PAN_ID_2                                  dataBANK0    0000F6
+_PIN_MANAGER_Initialize                    text26       001CF8
+_PIR1bits                                  (abs)        000F9E
+_PORTAbits                                 (abs)        000F80
+_PORTCbits                                 (abs)        000F82
+_PORTDbits                                 (abs)        000F83
+_PORTE                                     (abs)        000F84
+_PORTFbits                                 (abs)        000F85
+_Portread                                  bssCOMRAM    00001F
+_Previous_Status                           bssBANK0     0000A5
+_R3                                        smallconst   001007
+_RCONbits                                  (abs)        000FD0
+_RECEIVE_OK                                bssBANK0     0000AC
+_REFOCON                                   (abs)        000F2A
+_RF_reset                                  text12       001FE2
+_RSSI2                                     bssCOMRAM    000023
+_Resistance0                               smallconst   001001
+_ResistanceLDR                             bssBANK0     000080
+_Rv_CRC                                    bssBANK0     00009D
+_SEQ_NUMBER                                dataCOMRAM   00004E
+_SPI_Read                                  text42       0022BA
+_SPI_Write                                 text22       0022A8
+_SSP1BUF                                   (abs)        000FC9
+_SSP1CON1bits                              (abs)        000FC6
+_SSP1STATbits                              (abs)        000FC7
+_SYSTEM_Initialize                         text23       0021F8
+_Send_Frame                                bssCOMRAM    000005
+_Send_Frame_2                              bssBANK0     0000AD
+_Store                                     bssCOMRAM    000019
+_Store_DATA                                bssBANK0     000086
+_T                                         bssCOMRAM    000014
+_T0CON                                     (abs)        000FD5
+_T0CONbits                                 (abs)        000FD5
+_TMR0H                                     (abs)        000FD7
+_TMR0L                                     (abs)        000FD6
+_TMR0_CallBack                             text49       0020C2
+_TMR0_DefaultInterruptHandler              text50       002342
+_TMR0_ISR                                  text48       002328
+_TMR0_Initialize                           text24       001FB8
+_TMR0_InterruptHandler                     bssBANK0     00008C
+_TMR0_SetInterruptHandler                  text25       00230C
+_TRISA                                     (abs)        000F92
+_TRISB                                     (abs)        000F93
+_TRISC                                     (abs)        000F94
+_TRISCbits                                 (abs)        000F94
+_TRISD                                     (abs)        000F95
+_TRISE                                     (abs)        000F96
+_TRISF                                     (abs)        000F97
+_TRISG                                     (abs)        000F98
+_TX_CRC                                    bssBANK0     00009B
+_TX_ID                                     bssCOMRAM    000011
+_T_BUZZER                                  bssCOMRAM    000007
+_T_Calling                                 bssCOMRAM    000002
+_T_ERROR                                   bssBANK0     000097
+_T_ID_Send                                 bssCOMRAM    000012
+_T_Input                                   bssCOMRAM    000021
+_Tick                                      bssCOMRAM    000010
+_Time_start                                bssBANK0     000093
+_Trick                                     bssCOMRAM    00000F
+_VALUE                                     bssCOMRAM    00000D
+_Value_LDR                                 bssBANK0     000091
+_Vcc                                       smallconst   001004
+_VoltageOutput                             bssBANK0     000083
+_Xor_check                                 text47       001DC0
+_ZigBee_Receive_Buffer                     bssBANK0     000072
+_Zigbee_Device_Id                          bssBANK1     000115
+_Zigbee_data_Store_Buffer                  text59       001F28
+__CFG_BBSIZ$BB2K                           (abs)        000000
+__CFG_BOREN$SBORDIS                        (abs)        000000
+__CFG_BORPWR$ZPBORMV                       (abs)        000000
+__CFG_BORV$3                               (abs)        000000
+__CFG_CCP2MX$PORTC                         (abs)        000000
+__CFG_CP0$OFF                              (abs)        000000
+__CFG_CP1$OFF                              (abs)        000000
+__CFG_CP2$OFF                              (abs)        000000
+__CFG_CP3$OFF                              (abs)        000000
+__CFG_CP4$OFF                              (abs)        000000
+__CFG_CP5$OFF                              (abs)        000000
+__CFG_CP6$OFF                              (abs)        000000
+__CFG_CP7$OFF                              (abs)        000000
+__CFG_CPB$OFF                              (abs)        000000
+__CFG_CPD$OFF                              (abs)        000000
+__CFG_DEBUG$OFF                            (abs)        000000
+__CFG_EBRT0$OFF                            (abs)        000000
+__CFG_EBRT1$OFF                            (abs)        000000
+__CFG_EBRT2$OFF                            (abs)        000000
+__CFG_EBRT3$OFF                            (abs)        000000
+__CFG_EBRT4$OFF                            (abs)        000000
+__CFG_EBRT5$OFF                            (abs)        000000
+__CFG_EBRT6$OFF                            (abs)        000000
+__CFG_EBRT7$OFF                            (abs)        000000
+__CFG_EBRTB$OFF                            (abs)        000000
+__CFG_FCMEN$OFF                            (abs)        000000
+__CFG_FOSC$INTIO2                          (abs)        000000
+__CFG_IESO$OFF                             (abs)        000000
+__CFG_INTOSCSEL$HIGH                       (abs)        000000
+__CFG_MCLRE$ON                             (abs)        000000
+__CFG_MSSPMSK$MSK7                         (abs)        000000
+__CFG_PLLCFG$ON                            (abs)        000000
+__CFG_PWRTEN$OFF                           (abs)        000000
+__CFG_RETEN$ON                             (abs)        000000
+__CFG_RTCOSC$SOSCREF                       (abs)        000000
+__CFG_SOSCSEL$DIG                          (abs)        000000
+__CFG_STVREN$ON                            (abs)        000000
+__CFG_WDTEN$OFF                            (abs)        000000
+__CFG_WDTPS$1048576                        (abs)        000000
+__CFG_WRT0$OFF                             (abs)        000000
+__CFG_WRT1$OFF                             (abs)        000000
+__CFG_WRT2$OFF                             (abs)        000000
+__CFG_WRT3$OFF                             (abs)        000000
+__CFG_WRT4$OFF                             (abs)        000000
+__CFG_WRT5$OFF                             (abs)        000000
+__CFG_WRT6$OFF                             (abs)        000000
+__CFG_WRT7$OFF                             (abs)        000000
+__CFG_WRTB$OFF                             (abs)        000000
+__CFG_WRTC$OFF                             (abs)        000000
+__CFG_WRTD$OFF                             (abs)        000000
+__CFG_XINST$OFF                            (abs)        000000
+__HRAM                                     (abs)        000000
+__Habs1                                    abs1         000000
+__Hbank0                                   bank0        000000
+__Hbank1                                   bank1        000000
+__Hbank10                                  bank10       000000
+__Hbank11                                  bank11       000000
+__Hbank12                                  bank12       000000
+__Hbank13                                  bank13       000000
+__Hbank14                                  bank14       000000
+__Hbank15                                  bank15       000000
+__Hbank2                                   bank2        000000
+__Hbank3                                   bank3        000000
+__Hbank4                                   bank4        000000
+__Hbank5                                   bank5        000000
+__Hbank6                                   bank6        000000
+__Hbank7                                   bank7        000000
+__Hbank8                                   bank8        000000
+__Hbank9                                   bank9        000000
+__Hbigbss                                  bigbss       000000
+__Hbigdata                                 bigdata      000000
+__Hbigram                                  bigram       000000
+__Hbss                                     bss          000000
+__HbssBANK0                                bssBANK0     000000
+__HbssBANK1                                bssBANK1     000000
+__HbssCOMRAM                               bssCOMRAM    000000
+__Hcinit                                   cinit        000000
+__Hclrtext                                 clrtext      000000
+__Hcomram                                  comram       000000
+__Hconfig                                  config       30000E
+__Hconst                                   const        000000
+__HcstackBANK0                             cstackBANK0  000000
+__HcstackBANK1                             cstackBANK1  000000
+__HcstackCOMRAM                            cstackCOMRAM 000000
+__Hdata                                    data         000000
+__HdataBANK0                               dataBANK0    000000
+__HdataCOMRAM                              dataCOMRAM   000000
+__Heeprom_data                             eeprom_data  000000
+__Hfarbss                                  farbss       000000
+__Hfardata                                 fardata      000000
+__Hibigdata                                ibigdata     000000
+__Hidata                                   idata        000000
+__HidataBANK0                              idataBANK0   000000
+__HidataCOMRAM                             idataCOMRAM  000000
+__Hidloc                                   idloc        200008
+__Hifardata                                ifardata     000000
+__Hinit                                    init         00011E
+__Hintcode                                 intcode      00000E
+__Hintcode_body                            intcode_body 000000
+__Hintcodelo                               intcodelo    00011A
+__Hintentry                                intentry     000000
+__Hintret                                  intret       000000
+__Hintsave_regs                            intsave_regs 000000
+__Hirdata                                  irdata       000000
+__Hmediumconst                             mediumconst  000000
+__HnvFARRAM                                nvFARRAM     000000
+__Hnvbit                                   nvbit        000000
+__Hnvrram                                  nvrram       000000
+__Hparam                                   rparam       000000
+__Hpowerup                                 powerup      00011A
+__Hram                                     ram          000000
+__Hramtop                                  ramtop       001000
+__Hrbit                                    rbit         000000
+__Hrbss                                    rbss         000000
+__Hrdata                                   rdata        000000
+__Hreset_vec                               reset_vec    000006
+__Hrparam                                  rparam       000000
+__Hsfr                                     sfr          000000
+__Hsmallconst                              smallconst   001010
+__Hspace_0                                 (abs)        30000E
+__Hspace_1                                 (abs)        000134
+__Hspace_2                                 (abs)        000000
+__Hstack                                   stack        000000
+__Hstruct                                  struct       000000
+__Htemp                                    temp         000050
+__Htext                                    text         000000
+__Htext0                                   text0        000000
+__Htext1                                   text1        000000
+__Htext10                                  text10       000000
+__Htext11                                  text11       000000
+__Htext12                                  text12       000000
+__Htext13                                  text13       000000
+__Htext14                                  text14       000000
+__Htext15                                  text15       000000
+__Htext16                                  text16       000000
+__Htext17                                  text17       000000
+__Htext18                                  text18       000000
+__Htext19                                  text19       000000
+__Htext2                                   text2        000000
+__Htext20                                  text20       000000
+__Htext21                                  text21       000000
+__Htext22                                  text22       000000
+__Htext23                                  text23       000000
+__Htext24                                  text24       000000
+__Htext25                                  text25       000000
+__Htext26                                  text26       000000
+__Htext27                                  text27       000000
+__Htext28                                  text28       000000
+__Htext29                                  text29       000000
+__Htext3                                   text3        000000
+__Htext30                                  text30       000000
+__Htext31                                  text31       000000
+__Htext32                                  text32       000000
+__Htext33                                  text33       000000
+__Htext34                                  text34       000000
+__Htext35                                  text35       000000
+__Htext37                                  text37       000000
+__Htext38                                  text38       000000
+__Htext39                                  text39       000000
+__Htext4                                   text4        000000
+__Htext40                                  text40       000000
+__Htext41                                  text41       000000
+__Htext42                                  text42       000000
+__Htext43                                  text43       000000
+__Htext44                                  text44       000000
+__Htext45                                  text45       000000
+__Htext46                                  text46       000000
+__Htext47                                  text47       000000
+__Htext48                                  text48       000000
+__Htext49                                  text49       000000
+__Htext5                                   text5        000000
+__Htext50                                  text50       000000
+__Htext52                                  text52       000000
+__Htext53                                  text53       000000
+__Htext54                                  text54       000000
+__Htext55                                  text55       000000
+__Htext56                                  text56       000000
+__Htext57                                  text57       000000
+__Htext58                                  text58       000000
+__Htext59                                  text59       000000
+__Htext6                                   text6        000000
+__Htext60                                  text60       000000
+__Htext61                                  text61       000000
+__Htext62                                  text62       000000
+__Htext63                                  text63       000000
+__Htext7                                   text7        000000
+__Htext8                                   text8        000000
+__Htext9                                   text9        000000
+__LRAM                                     (abs)        000001
+__Labs1                                    abs1         000000
+__Lbank0                                   bank0        000000
+__Lbank1                                   bank1        000000
+__Lbank10                                  bank10       000000
+__Lbank11                                  bank11       000000
+__Lbank12                                  bank12       000000
+__Lbank13                                  bank13       000000
+__Lbank14                                  bank14       000000
+__Lbank15                                  bank15       000000
+__Lbank2                                   bank2        000000
+__Lbank3                                   bank3        000000
+__Lbank4                                   bank4        000000
+__Lbank5                                   bank5        000000
+__Lbank6                                   bank6        000000
+__Lbank7                                   bank7        000000
+__Lbank8                                   bank8        000000
+__Lbank9                                   bank9        000000
+__Lbigbss                                  bigbss       000000
+__Lbigdata                                 bigdata      000000
+__Lbigram                                  bigram       000000
+__Lbss                                     bss          000000
+__LbssBANK0                                bssBANK0     000000
+__LbssBANK1                                bssBANK1     000000
+__LbssCOMRAM                               bssCOMRAM    000000
+__Lcinit                                   cinit        000000
+__Lclrtext                                 clrtext      000000
+__Lcomram                                  comram       000000
+__Lconfig                                  config       300000
+__Lconst                                   const        000000
+__LcstackBANK0                             cstackBANK0  000000
+__LcstackBANK1                             cstackBANK1  000000
+__LcstackCOMRAM                            cstackCOMRAM 000000
+__Ldata                                    data         000000
+__LdataBANK0                               dataBANK0    000000
+__LdataCOMRAM                              dataCOMRAM   000000
+__Leeprom_data                             eeprom_data  000000
+__Lfarbss                                  farbss       000000
+__Lfardata                                 fardata      000000
+__Libigdata                                ibigdata     000000
+__Lidata                                   idata        000000
+__LidataBANK0                              idataBANK0   000000
+__LidataCOMRAM                             idataCOMRAM  000000
+__Lidloc                                   idloc        200000
+__Lifardata                                ifardata     000000
+__Linit                                    init         00011A
+__Lintcode                                 intcode      000008
+__Lintcode_body                            intcode_body 000000
+__Lintcodelo                               intcodelo    000018
+__Lintentry                                intentry     000000
+__Lintret                                  intret       000000
+__Lintsave_regs                            intsave_regs 000000
+__Lirdata                                  irdata       000000
+__Lmediumconst                             mediumconst  000000
+__LnvFARRAM                                nvFARRAM     000000
+__Lnvbit                                   nvbit        000000
+__Lnvrram                                  nvrram       000000
+__Lparam                                   rparam       000000
+__Lpowerup                                 powerup      00011A
+__Lram                                     ram          000000
+__Lramtop                                  ramtop       001000
+__Lrbit                                    rbit         000000
+__Lrbss                                    rbss         000000
+__Lrdata                                   rdata        000000
+__Lreset_vec                               reset_vec    000000
+__Lrparam                                  rparam       000000
+__Lsfr                                     sfr          000000
+__Lsmallconst                              smallconst   001000
+__Lspace_0                                 (abs)        000000
+__Lspace_1                                 (abs)        000000
+__Lspace_2                                 (abs)        000000
+__Lstack                                   stack        000000
+__Lstruct                                  struct       000000
+__Ltemp                                    temp         00004F
+__Ltext                                    text         000000
+__Ltext0                                   text0        000000
+__Ltext1                                   text1        000000
+__Ltext10                                  text10       000000
+__Ltext11                                  text11       000000
+__Ltext12                                  text12       000000
+__Ltext13                                  text13       000000
+__Ltext14                                  text14       000000
+__Ltext15                                  text15       000000
+__Ltext16                                  text16       000000
+__Ltext17                                  text17       000000
+__Ltext18                                  text18       000000
+__Ltext19                                  text19       000000
+__Ltext2                                   text2        000000
+__Ltext20                                  text20       000000
+__Ltext21                                  text21       000000
+__Ltext22                                  text22       000000
+__Ltext23                                  text23       000000
+__Ltext24                                  text24       000000
+__Ltext25                                  text25       000000
+__Ltext26                                  text26       000000
+__Ltext27                                  text27       000000
+__Ltext28                                  text28       000000
+__Ltext29                                  text29       000000
+__Ltext3                                   text3        000000
+__Ltext30                                  text30       000000
+__Ltext31                                  text31       000000
+__Ltext32                                  text32       000000
+__Ltext33                                  text33       000000
+__Ltext34                                  text34       000000
+__Ltext35                                  text35       000000
+__Ltext37                                  text37       000000
+__Ltext38                                  text38       000000
+__Ltext39                                  text39       000000
+__Ltext4                                   text4        000000
+__Ltext40                                  text40       000000
+__Ltext41                                  text41       000000
+__Ltext42                                  text42       000000
+__Ltext43                                  text43       000000
+__Ltext44                                  text44       000000
+__Ltext45                                  text45       000000
+__Ltext46                                  text46       000000
+__Ltext47                                  text47       000000
+__Ltext48                                  text48       000000
+__Ltext49                                  text49       000000
+__Ltext5                                   text5        000000
+__Ltext50                                  text50       000000
+__Ltext52                                  text52       000000
+__Ltext53                                  text53       000000
+__Ltext54                                  text54       000000
+__Ltext55                                  text55       000000
+__Ltext56                                  text56       000000
+__Ltext57                                  text57       000000
+__Ltext58                                  text58       000000
+__Ltext59                                  text59       000000
+__Ltext6                                   text6        000000
+__Ltext60                                  text60       000000
+__Ltext61                                  text61       000000
+__Ltext62                                  text62       000000
+__Ltext63                                  text63       000000
+__Ltext7                                   text7        000000
+__Ltext8                                   text8        000000
+__Ltext9                                   text9        000000
+__S0                                       (abs)        30000E
+__S1                                       (abs)        000134
+__S2                                       (abs)        000000
+___inthi_sp                                stack        000000
+___intlo_sp                                stack        000000
+___param_bank                              (abs)        000000
+___rparam_used                             (abs)        000001
+___sp                                      stack        000000
+__accesstop                                (abs)        000060
+__activetblptr                             (abs)        000003
+__end_of_ADC_Initialize                    text31       002242
+__end_of_AdcRef                            smallconst   00100D
+__end_of_Clear_Data                        text35       001EF4
+__end_of_DATA_LENGHT                       smallconst   00100F
+__end_of_Delay_ms                          text16       0021C2
+__end_of_Display_LED_Indication            text34       001A06
+__end_of_EXT_INT_Initialize                text29       00222C
+__end_of_HEADER_LENGHT                     smallconst   00100E
+__end_of_INT0_CallBack                     text61       00210A
+__end_of_INT0_DefaultInterruptHandler      text62       002346
+__end_of_INT0_ISR                          text60       00233C
+__end_of_INT0_SetInterruptHandler          text30       002328
+__end_of_INTERRUPT_Initialize              text28       002342
+__end_of_INTERRUPT_InterruptManagerHigh    intcode_body 001888
+__end_of_INTERRUPT_InterruptManagerLow     intcodelo    00011A
+__end_of_InitSPI                           text32       00209E
+__end_of_OSCILLATOR_Initialize             text27       002296
+__end_of_PIN_MANAGER_Initialize            text26       001D3C
+__end_of_R3                                smallconst   00100A
+__end_of_RF_reset                          text12       00200A
+__end_of_Resistance0                       smallconst   001004
+__end_of_SPI_Read                          text42       0022CC
+__end_of_SPI_Write                         text22       0022BA
+__end_of_SYSTEM_Initialize                 text23       002212
+__end_of_TMR0_CallBack                     text49       0020E6
+__end_of_TMR0_DefaultInterruptHandler      text50       002344
+__end_of_TMR0_ISR                          text48       002334
+__end_of_TMR0_Initialize                   text24       001FE2
+__end_of_TMR0_SetInterruptHandler          text25       00231A
+__end_of_Vcc                               smallconst   001007
+__end_of_Xor_check                         text47       001E02
+__end_of_Zigbee_data_Store_Buffer          text59       001F5C
+__end_of__initialization                   cinit        001BF4
+__end_of_delay                             text33       00216C
+__end_of_enable_PLL                        text18       002282
+__end_of_enable_interrupt                  text20       00230C
+__end_of_init_ZIGBEE_basic                 text17       001A9C
+__end_of_init_ZIGBEE_nonbeacon             text10       002056
+__end_of_main                              text0        00148C
+__end_of_nonbeacon_PAN_coordinator_device  text9        001E80
+__end_of_pin_reset                         text8        00212C
+__end_of_pin_wake                          text15       0022A8
+__end_of_read_RX_FIFO                      text54       001292
+__end_of_read_ZIGBEE_long                  text56       001CF8
+__end_of_read_ZIGBEE_short                 text41       002032
+__end_of_set_CCA_mode                      text14       00194E
+__end_of_set_PAN_ID                        text7        001FB8
+__end_of_set_RSSI_mode                     text13       001DC0
+__end_of_set_TX_power                      text6        001D7E
+__end_of_set_WAKE_from_pin                 text5        0021A6
+__end_of_set_channel                       text11       00164C
+__end_of_set_frame_format_filter           text4        001B2E
+__end_of_set_long_address                  text3        001F28
+__end_of_set_not_ACK                       text44       00226E
+__end_of_set_not_encrypt                   text43       002258
+__end_of_set_reception_mode                text2        001B9E
+__end_of_set_short_address                 text1        001F8A
+__end_of_start_transmit                    text40       001EBE
+__end_of_write_TX_normal_FIFO              text37       0017AC
+__end_of_write_ZIGBEE_long                 text19       001C52
+__end_of_write_ZIGBEE_short                text21       00207A
+__end_ofi1_Delay_ms                        text39       0021DE
+__end_ofi1_SPI_Write                       text46       0022DE
+__end_ofi1_write_ZIGBEE_long               text38       001CA6
+__end_ofi1_write_ZIGBEE_short              text45       0020C2
+__end_ofi2_SPI_Read                        text58       0022FE
+__end_ofi2_SPI_Write                       text57       0022EE
+__end_ofi2_Xor_check                       text53       001E42
+__end_ofi2_read_ZIGBEE_short               text52       00214E
+__end_ofi2_write_ZIGBEE_short              text55       00218A
+__initialization                           cinit        001B9E
+__mediumconst                              mediumconst  000000
+__pbssBANK0                                bssBANK0     000060
+__pbssBANK1                                bssBANK1     000100
+__pbssCOMRAM                               bssCOMRAM    000001
+__pcinit                                   cinit        001B9E
+__pcstackBANK0                             cstackBANK0  0000BB
+__pcstackBANK1                             cstackBANK1  000129
+__pcstackCOMRAM                            cstackCOMRAM 00002A
+__pdataBANK0                               dataBANK0    0000E0
+__pdataCOMRAM                              dataCOMRAM   00004E
+__pidataBANK0                              idataBANK0   0021DE
+__pidataCOMRAM                             idataCOMRAM  002346
+__pintcode                                 intcode      000008
+__pintcode_body                            intcode_body 0017AC
+__pintcodelo                               intcodelo    000018
+__psmallconst                              smallconst   001000
+__ptext0                                   text0        001292
+__ptext1                                   text1        001F5C
+__ptext10                                  text10       002032
+__ptext11                                  text11       00148C
+__ptext12                                  text12       001FE2
+__ptext13                                  text13       001D7E
+__ptext14                                  text14       001888
+__ptext15                                  text15       002296
+__ptext16                                  text16       0021A6
+__ptext17                                  text17       001A06
+__ptext18                                  text18       00226E
+__ptext19                                  text19       001BFE
+__ptext2                                   text2        001B2E
+__ptext20                                  text20       0022FE
+__ptext21                                  text21       002056
+__ptext22                                  text22       0022A8
+__ptext23                                  text23       0021F8
+__ptext24                                  text24       001FB8
+__ptext25                                  text25       00230C
+__ptext26                                  text26       001CF8
+__ptext27                                  text27       002282
+__ptext28                                  text28       00233C
+__ptext29                                  text29       002212
+__ptext3                                   text3        001EF4
+__ptext30                                  text30       00231A
+__ptext31                                  text31       00222C
+__ptext32                                  text32       00207A
+__ptext33                                  text33       00214E
+__ptext34                                  text34       00194E
+__ptext35                                  text35       001EBE
+__ptext37                                  text37       00164C
+__ptext38                                  text38       001C52
+__ptext39                                  text39       0021C2
+__ptext4                                   text4        001A9C
+__ptext40                                  text40       001E80
+__ptext41                                  text41       00200A
+__ptext42                                  text42       0022BA
+__ptext43                                  text43       002242
+__ptext44                                  text44       002258
+__ptext45                                  text45       00209E
+__ptext46                                  text46       0022CC
+__ptext47                                  text47       001DC0
+__ptext48                                  text48       002328
+__ptext49                                  text49       0020C2
+__ptext5                                   text5        00218A
+__ptext50                                  text50       002342
+__ptext52                                  text52       00212C
+__ptext53                                  text53       001E02
+__ptext54                                  text54       001010
+__ptext55                                  text55       00216C
+__ptext56                                  text56       001CA6
+__ptext57                                  text57       0022DE
+__ptext58                                  text58       0022EE
+__ptext59                                  text59       001F28
+__ptext6                                   text6        001D3C
+__ptext60                                  text60       002334
+__ptext61                                  text61       0020E6
+__ptext62                                  text62       002344
+__ptext63                                  text63       000000
+__ptext7                                   text7        001F8A
+__ptext8                                   text8        00210A
+__ptext9                                   text9        001E42
+__ramtop                                   ramtop       001000
+__size_of_ADC_Initialize                   (abs)        000000
+__size_of_Clear_Data                       (abs)        000000
+__size_of_Delay_ms                         (abs)        000000
+__size_of_Display_LED_Indication           (abs)        000000
+__size_of_EXT_INT_Initialize               (abs)        000000
+__size_of_INT0_CallBack                    (abs)        000000
+__size_of_INT0_DefaultInterruptHandler     (abs)        000000
+__size_of_INT0_ISR                         (abs)        000000
+__size_of_INT0_SetInterruptHandler         (abs)        000000
+__size_of_INTERRUPT_Initialize             (abs)        000000
+__size_of_INTERRUPT_InterruptManagerHigh   (abs)        000000
+__size_of_INTERRUPT_InterruptManagerLow    (abs)        000000
+__size_of_InitSPI                          (abs)        000000
+__size_of_OSCILLATOR_Initialize            (abs)        000000
+__size_of_PIN_MANAGER_Initialize           (abs)        000000
+__size_of_RF_reset                         (abs)        000000
+__size_of_SPI_Read                         (abs)        000000
+__size_of_SPI_Write                        (abs)        000000
+__size_of_SYSTEM_Initialize                (abs)        000000
+__size_of_TMR0_CallBack                    (abs)        000000
+__size_of_TMR0_DefaultInterruptHandler     (abs)        000000
+__size_of_TMR0_ISR                         (abs)        000000
+__size_of_TMR0_Initialize                  (abs)        000000
+__size_of_TMR0_SetInterruptHandler         (abs)        000000
+__size_of_Xor_check                        (abs)        000000
+__size_of_Zigbee_data_Store_Buffer         (abs)        000000
+__size_of_delay                            (abs)        000000
+__size_of_enable_PLL                       (abs)        000000
+__size_of_enable_interrupt                 (abs)        000000
+__size_of_init_ZIGBEE_basic                (abs)        000000
+__size_of_init_ZIGBEE_nonbeacon            (abs)        000000
+__size_of_main                             (abs)        000000
+__size_of_nonbeacon_PAN_coordinator_device (abs)        000000
+__size_of_pin_reset                        (abs)        000000
+__size_of_pin_wake                         (abs)        000000
+__size_of_read_RX_FIFO                     (abs)        000000
+__size_of_read_ZIGBEE_long                 (abs)        000000
+__size_of_read_ZIGBEE_short                (abs)        000000
+__size_of_set_CCA_mode                     (abs)        000000
+__size_of_set_PAN_ID                       (abs)        000000
+__size_of_set_RSSI_mode                    (abs)        000000
+__size_of_set_TX_power                     (abs)        000000
+__size_of_set_WAKE_from_pin                (abs)        000000
+__size_of_set_channel                      (abs)        000000
+__size_of_set_frame_format_filter          (abs)        000000
+__size_of_set_long_address                 (abs)        000000
+__size_of_set_not_ACK                      (abs)        000000
+__size_of_set_not_encrypt                  (abs)        000000
+__size_of_set_reception_mode               (abs)        000000
+__size_of_set_short_address                (abs)        000000
+__size_of_start_transmit                   (abs)        000000
+__size_of_write_TX_normal_FIFO             (abs)        000000
+__size_of_write_ZIGBEE_long                (abs)        000000
+__size_of_write_ZIGBEE_short               (abs)        000000
+__size_ofi1_Delay_ms                       (abs)        000000
+__size_ofi1_SPI_Write                      (abs)        000000
+__size_ofi1_write_ZIGBEE_long              (abs)        000000
+__size_ofi1_write_ZIGBEE_short             (abs)        000000
+__size_ofi2_SPI_Read                       (abs)        000000
+__size_ofi2_SPI_Write                      (abs)        000000
+__size_ofi2_Xor_check                      (abs)        000000
+__size_ofi2_read_ZIGBEE_short              (abs)        000000
+__size_ofi2_write_ZIGBEE_short             (abs)        000000
+__smallconst                               smallconst   001000
+_address                                   bssCOMRAM    00000C
+_address_RX_FIFO                           dataBANK0    0000EC
+_address_TX_normal_FIFO                    bssBANK0     00009F
+_ckeck                                     bssBANK0     000095
+_d                                         bssCOMRAM    00001A
+_data_RX_FIFO                              bssBANK1     000100
+_data_TX_normal_FIFO                       bssBANK0     000060
+_data_r                                    bssCOMRAM    000025
+_delay                                     text33       00214E
+_enable_PLL                                text18       00226E
+_enable_interrupt                          text20       0022FE
+_g                                         bssBANK0     0000A1
+_i                                         bssCOMRAM    00001C
+_ii                                        bssCOMRAM    00001B
+_init_ZIGBEE_basic                         text17       001A06
+_init_ZIGBEE_nonbeacon                     text10       002032
+_lost_data                                 bssCOMRAM    000022
+_main                                      text0        001292
+_nonbeacon_PAN_coordinator_device          text9        001E42
+_pin_reset                                 text8        00210A
+_pin_wake                                  text15       002296
+_portread                                  bssCOMRAM    000004
+_read_RX_FIFO                              text54       001010
+_read_ZIGBEE_long                          text56       001CA6
+_read_ZIGBEE_short                         text41       00200A
+_set_CCA_mode                              text14       001888
+_set_PAN_ID                                text7        001F8A
+_set_RSSI_mode                             text13       001D7E
+_set_TX_power                              text6        001D3C
+_set_WAKE_from_pin                         text5        00218A
+_set_channel                               text11       00148C
+_set_frame_format_filter                   text4        001A9C
+_set_long_address                          text3        001EF4
+_set_not_ACK                               text44       002258
+_set_not_encrypt                           text43       002242
+_set_reception_mode                        text2        001B2E
+_set_short_address                         text1        001F5C
+_slave_add                                 bssCOMRAM    000018
+_start_transmit                            text40       001E80
+_tick                                      bssCOMRAM    000003
+_tick1                                     bssBANK0     0000A9
+_tick2                                     bssBANK0     0000AA
+_timer0ReloadVal                           bssBANK0     0000B2
+_value                                     bssCOMRAM    00000E
+_write_TX_normal_FIFO                      text37       00164C
+_write_ZIGBEE_long                         text19       001BFE
+_write_ZIGBEE_short                        text21       002056
+btemp                                      temp         00004F
+delay@dly                                  cstackBANK1  000129
+delay@l                                    cstackBANK1  00012B
+end_of_initialization                      cinit        001BF4
+i1Delay_ms@time                            cstackBANK0  0000BB
+i1Delay_ms@y                               cstackBANK0  0000BD
+i1SPI_Write@command                        cstackBANK0  0000BC
+i1SPI_Write@response                       cstackBANK0  0000BB
+i1_Delay_ms                                text39       0021C2
+i1_SPI_Write                               text46       0022CC
+i1_write_ZIGBEE_long                       text38       001C52
+i1_write_ZIGBEE_short                      text45       00209E
+i1write_ZIGBEE_long@address                cstackBANK0  0000BD
+i1write_ZIGBEE_long@address_high           cstackBANK0  0000C2
+i1write_ZIGBEE_long@address_low            cstackBANK0  0000C3
+i1write_ZIGBEE_long@data_r                 cstackBANK0  0000BF
+i1write_ZIGBEE_short@address               cstackBANK0  0000BE
+i1write_ZIGBEE_short@data_r                cstackBANK0  0000BD
+i2SPI_Read@TempVar                         cstackCOMRAM 00002A
+i2SPI_Write@command                        cstackCOMRAM 00002B
+i2SPI_Write@response                       cstackCOMRAM 00002A
+i2Xor_check@data_value                     cstackCOMRAM 00002A
+i2Xor_check@length                         cstackCOMRAM 00002C
+i2Xor_check@xor                            cstackCOMRAM 000030
+i2Xor_check@xor_value                      cstackCOMRAM 00002E
+i2_SPI_Read                                text58       0022EE
+i2_SPI_Write                               text57       0022DE
+i2_Xor_check                               text53       001E02
+i2_read_ZIGBEE_short                       text52       00212C
+i2_write_ZIGBEE_short                      text55       00216C
+i2read_ZIGBEE_short@address                cstackCOMRAM 00002C
+i2read_ZIGBEE_short@data_r                 cstackCOMRAM 00002D
+i2write_ZIGBEE_short@address               cstackCOMRAM 00002D
+i2write_ZIGBEE_short@data_r                cstackCOMRAM 00002C
+int$flags                                  temp         00004F
+int_func                                   intcode_body 0017AC
+intlevel0                                  text         000000
+intlevel1                                  text         000000
+intlevel2                                  text         000000
+intlevel3                                  text         000000
+nonbeacon_PAN_coordinator_device@temp      cstackBANK1  00012D
+read_RX_FIFO@i                             cstackCOMRAM 000039
+read_RX_FIFO@temp                          cstackCOMRAM 000038
+read_ZIGBEE_long@address                   cstackCOMRAM 00002C
+read_ZIGBEE_long@address_high              cstackCOMRAM 000031
+read_ZIGBEE_long@address_low               cstackCOMRAM 000032
+read_ZIGBEE_long@data_r                    cstackCOMRAM 000030
+read_ZIGBEE_short@address                  cstackBANK0  0000BE
+read_ZIGBEE_short@data_r                   cstackBANK0  0000BD
+set_CCA_mode@CCA_mode                      cstackBANK1  00012D
+set_CCA_mode@temp                          cstackBANK1  00012E
+set_PAN_ID@address                         cstackBANK1  00012D
+set_RSSI_mode@RSSI_mode                    cstackBANK1  00012D
+set_RSSI_mode@temp                         cstackBANK1  00012E
+set_TX_power@power                         cstackBANK1  000133
+set_channel@channel_number                 cstackBANK1  000132
+set_frame_format_filter@fff_mode           cstackBANK1  00012D
+set_frame_format_filter@temp               cstackBANK1  00012E
+set_long_address@address                   cstackBANK1  00012D
+set_long_address@i                         cstackBANK1  00012F
+set_not_ACK@temp                           cstackBANK0  0000BF
+set_not_encrypt@temp                       cstackBANK0  0000BF
+set_reception_mode@r_mode                  cstackBANK1  00012D
+set_reception_mode@temp                    cstackBANK1  00012E
+set_short_address@address                  cstackBANK1  00012D
+stackhi                                    (abs)        000F15
+stacklo                                    (abs)        000134
+start                                      init         00011A
+start_initialization                       cinit        001B9E
+write_TX_normal_FIFO@i                     cstackBANK0  0000CA
+write_TX_normal_FIFO@n                     cstackBANK0  0000C9
+write_ZIGBEE_long@address                  cstackBANK1  00012B
+write_ZIGBEE_long@address_high             cstackBANK1  000130
+write_ZIGBEE_long@address_low              cstackBANK1  000131
+write_ZIGBEE_long@data_r                   cstackBANK1  00012D
+write_ZIGBEE_short@address                 cstackBANK1  00012C
+write_ZIGBEE_short@data_r                  cstackBANK1  00012B
+wtemp6                                     temp         000050
+
+
+FUNCTION INFORMATION:
+
+ *************** function _main *****************
+ Defined at:
+		line 103 in file "2_April_LedDisplayMain.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels required when called:   14
+ This function calls:
+		_Clear_Data
+		_Delay_ms
+		_Display_LED_Indication
+		_InitSPI
+		_RF_reset
+		_SYSTEM_Initialize
+		_init_ZIGBEE_nonbeacon
+		_nonbeacon_PAN_coordinator_device
+		_pin_reset
+		_pin_wake
+		_set_PAN_ID
+		_set_TX_power
+		_set_WAKE_from_pin
+		_set_frame_format_filter
+		_set_long_address
+		_set_reception_mode
+		_set_short_address
+ This function is called by:
+		Startup code after reset
+ This function uses a non-reentrant model
+
+
+ *************** function _set_short_address *****************
+ Defined at:
+		line 67 in file "zigbee.c"
+ Parameters:    Size  Location     Type
+  address         2    4[BANK1 ] PTR unsigned char 
+		 -> ADDRESS_short_2(2), 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:   11
+ This function calls:
+		_write_ZIGBEE_short
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _set_reception_mode *****************
+ Defined at:
+		line 303 in file "zigbee.c"
+ Parameters:    Size  Location     Type
+  r_mode          1    wreg     unsigned char 
+ Auto vars:     Size  Location     Type
+  r_mode          1    4[BANK1 ] unsigned char 
+  temp            1    5[BANK1 ] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:   11
+ This function calls:
+		_write_ZIGBEE_short
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _set_long_address *****************
+ Defined at:
+		line 62 in file "zigbee.c"
+ Parameters:    Size  Location     Type
+  address         2    4[BANK1 ] PTR unsigned char 
+		 -> ADDRESS_long_2(8), 
+ Auto vars:     Size  Location     Type
+  i               1    6[BANK1 ] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       1       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       3       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        3 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:   11
+ This function calls:
+		_write_ZIGBEE_short
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _set_frame_format_filter *****************
+ Defined at:
+		line 262 in file "zigbee.c"
+ Parameters:    Size  Location     Type
+  fff_mode        1    wreg     unsigned char 
+ Auto vars:     Size  Location     Type
+  fff_mode        1    4[BANK1 ] unsigned char 
+  temp            1    5[BANK1 ] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:   11
+ This function calls:
+		_write_ZIGBEE_short
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _set_WAKE_from_pin *****************
+ Defined at:
+		line 57 in file "zigbee.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:   11
+ This function calls:
+		_write_ZIGBEE_short
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _set_TX_power *****************
+ Defined at:
+		line 251 in file "zigbee.c"
+ Parameters:    Size  Location     Type
+  power           1    wreg     unsigned char 
+ Auto vars:     Size  Location     Type
+  power           1   10[BANK1 ] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       1       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       1       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:   11
+ This function calls:
+		_write_ZIGBEE_long
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _set_PAN_ID *****************
+ Defined at:
+		line 71 in file "zigbee.c"
+ Parameters:    Size  Location     Type
+  address         2    4[BANK1 ] PTR unsigned char 
+		 -> PAN_ID_2(2), 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:   11
+ This function calls:
+		_write_ZIGBEE_short
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _pin_reset *****************
+ Defined at:
+		line 46 in file "zigbee.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:   10
+ This function calls:
+		_Delay_ms
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _nonbeacon_PAN_coordinator_device *****************
+ Defined at:
+		line 235 in file "zigbee.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+  temp            1    4[BANK1 ] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       1       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       1       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        1 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:   11
+ This function calls:
+		_write_ZIGBEE_short
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _init_ZIGBEE_nonbeacon *****************
+ Defined at:
+		line 75 in file "zigbee.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:   13
+ This function calls:
+		_RF_reset
+		_enable_interrupt
+		_init_ZIGBEE_basic
+		_pin_wake
+		_set_CCA_mode
+		_set_RSSI_mode
+		_set_channel
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _set_channel *****************
+ Defined at:
+		line 171 in file "zigbee.c"
+ Parameters:    Size  Location     Type
+  channel_numb    1    wreg     unsigned char 
+ Auto vars:     Size  Location     Type
+  channel_numb    1    9[BANK1 ] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       1       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       1       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        1 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:   12
+ This function calls:
+		_RF_reset
+		_write_ZIGBEE_long
+ This function is called by:
+		_init_ZIGBEE_nonbeacon
+ This function uses a non-reentrant model
+
+
+ *************** function _RF_reset *****************
+ Defined at:
+		line 52 in file "zigbee.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:   11
+ This function calls:
+		_Delay_ms
+		_write_ZIGBEE_short
+ This function is called by:
+		_init_ZIGBEE_nonbeacon
+		_set_channel
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _set_RSSI_mode *****************
+ Defined at:
+		line 149 in file "zigbee.c"
+ Parameters:    Size  Location     Type
+  RSSI_mode       1    wreg     unsigned char 
+ Auto vars:     Size  Location     Type
+  RSSI_mode       1    4[BANK1 ] unsigned char 
+  temp            1    5[BANK1 ] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:   11
+ This function calls:
+		_write_ZIGBEE_short
+ This function is called by:
+		_init_ZIGBEE_nonbeacon
+ This function uses a non-reentrant model
+
+
+ *************** function _set_CCA_mode *****************
+ Defined at:
+		line 102 in file "zigbee.c"
+ Parameters:    Size  Location     Type
+  CCA_mode        1    wreg     unsigned char 
+ Auto vars:     Size  Location     Type
+  CCA_mode        1    4[BANK1 ] unsigned char 
+  temp            1    5[BANK1 ] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:   11
+ This function calls:
+		_write_ZIGBEE_short
+ This function is called by:
+		_init_ZIGBEE_nonbeacon
+ This function uses a non-reentrant model
+
+
+ *************** function _pin_wake *****************
+ Defined at:
+		line 231 in file "zigbee.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:   10
+ This function calls:
+		_Delay_ms
+ This function is called by:
+		_init_ZIGBEE_nonbeacon
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _Delay_ms *****************
+ Defined at:
+		line 475 in file "zigbee.c"
+ Parameters:    Size  Location     Type
+  time            2    0[BANK1 ] unsigned int 
+ Auto vars:     Size  Location     Type
+  y               2    2[BANK1 ] unsigned int 
+  x               2    0        unsigned int 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       4       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        4 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    9
+ This function calls:
+		Nothing
+ This function is called by:
+		_pin_reset
+		_RF_reset
+		_pin_wake
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _init_ZIGBEE_basic *****************
+ Defined at:
+		line 85 in file "zigbee.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:   12
+ This function calls:
+		_enable_PLL
+		_write_ZIGBEE_long
+		_write_ZIGBEE_short
+ This function is called by:
+		_init_ZIGBEE_nonbeacon
+ This function uses a non-reentrant model
+
+
+ *************** function _enable_PLL *****************
+ Defined at:
+		line 99 in file "zigbee.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:   11
+ This function calls:
+		_write_ZIGBEE_long
+ This function is called by:
+		_init_ZIGBEE_basic
+ This function uses a non-reentrant model
+
+
+ *************** function _write_ZIGBEE_long *****************
+ Defined at:
+		line 414 in file "zigbee.c"
+ Parameters:    Size  Location     Type
+  address         2    2[BANK1 ] unsigned int 
+  data_r          1    4[BANK1 ] unsigned char 
+ Auto vars:     Size  Location     Type
+  address_low     1    8[BANK1 ] unsigned char 
+  address_high    1    7[BANK1 ] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       3       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       7       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        7 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:   10
+ This function calls:
+		_SPI_Write
+ This function is called by:
+		_init_ZIGBEE_basic
+		_enable_PLL
+		_set_channel
+		_set_TX_power
+ This function uses a non-reentrant model
+
+
+ *************** function _enable_interrupt *****************
+ Defined at:
+		line 167 in file "zigbee.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:   11
+ This function calls:
+		_write_ZIGBEE_short
+ This function is called by:
+		_init_ZIGBEE_nonbeacon
+ This function uses a non-reentrant model
+
+
+ *************** function _write_ZIGBEE_short *****************
+ Defined at:
+		line 396 in file "zigbee.c"
+ Parameters:    Size  Location     Type
+  address         1    wreg     unsigned char 
+  data_r          1    2[BANK1 ] unsigned char 
+ Auto vars:     Size  Location     Type
+  address         1    3[BANK1 ] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       1       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       1       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:   10
+ This function calls:
+		_SPI_Write
+ This function is called by:
+		_RF_reset
+		_set_WAKE_from_pin
+		_set_long_address
+		_set_short_address
+		_set_PAN_ID
+		_init_ZIGBEE_basic
+		_set_CCA_mode
+		_set_RSSI_mode
+		_enable_interrupt
+		_nonbeacon_PAN_coordinator_device
+		_set_frame_format_filter
+		_set_reception_mode
+ This function uses a non-reentrant model
+
+
+ *************** function _SPI_Write *****************
+ Defined at:
+		line 457 in file "zigbee.c"
+ Parameters:    Size  Location     Type
+  command         1    wreg     unsigned char 
+ Auto vars:     Size  Location     Type
+  command         1    1[BANK1 ] unsigned char 
+  response        1    0[BANK1 ] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    9
+ This function calls:
+		Nothing
+ This function is called by:
+		_write_ZIGBEE_short
+		_write_ZIGBEE_long
+ This function uses a non-reentrant model
+
+
+ *************** function _SYSTEM_Initialize *****************
+ Defined at:
+		line 128 in file "mcc_generated_files/mcc.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:   11
+ This function calls:
+		_ADC_Initialize
+		_EXT_INT_Initialize
+		_INTERRUPT_Initialize
+		_OSCILLATOR_Initialize
+		_PIN_MANAGER_Initialize
+		_TMR0_Initialize
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _TMR0_Initialize *****************
+ Defined at:
+		line 66 in file "mcc_generated_files/tmr0.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:   10
+ This function calls:
+		_TMR0_SetInterruptHandler
+ This function is called by:
+		_SYSTEM_Initialize
+ This function uses a non-reentrant model
+
+
+ *************** function _TMR0_SetInterruptHandler *****************
+ Defined at:
+		line 154 in file "mcc_generated_files/tmr0.c"
+ Parameters:    Size  Location     Type
+  InterruptHan    3    0[BANK1 ] PTR FTN()void 
+		 -> TMR0_DefaultInterruptHandler(1), 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       3       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       3       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        3 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    9
+ This function calls:
+		Nothing
+ This function is called by:
+		_TMR0_Initialize
+ This function uses a non-reentrant model
+
+
+ *************** function _PIN_MANAGER_Initialize *****************
+ Defined at:
+		line 52 in file "mcc_generated_files/pin_manager.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    9
+ This function calls:
+		Nothing
+ This function is called by:
+		_SYSTEM_Initialize
+ This function uses a non-reentrant model
+
+
+ *************** function _OSCILLATOR_Initialize *****************
+ Defined at:
+		line 138 in file "mcc_generated_files/mcc.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    9
+ This function calls:
+		Nothing
+ This function is called by:
+		_SYSTEM_Initialize
+ This function uses a non-reentrant model
+
+
+ *************** function _INTERRUPT_Initialize *****************
+ Defined at:
+		line 51 in file "mcc_generated_files/interrupt_manager.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		None
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    9
+ This function calls:
+		Nothing
+ This function is called by:
+		_SYSTEM_Initialize
+ This function uses a non-reentrant model
+
+
+ *************** function _EXT_INT_Initialize *****************
+ Defined at:
+		line 59 in file "mcc_generated_files/ext_int.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:   10
+ This function calls:
+		_INT0_SetInterruptHandler
+ This function is called by:
+		_SYSTEM_Initialize
+ This function uses a non-reentrant model
+
+
+ *************** function _INT0_SetInterruptHandler *****************
+ Defined at:
+		line 50 in file "mcc_generated_files/ext_int.c"
+ Parameters:    Size  Location     Type
+  InterruptHan    3    0[BANK1 ] PTR FTN()void 
+		 -> INT0_DefaultInterruptHandler(1), 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       3       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       3       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        3 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    9
+ This function calls:
+		Nothing
+ This function is called by:
+		_EXT_INT_Initialize
+ This function uses a non-reentrant model
+
+
+ *************** function _ADC_Initialize *****************
+ Defined at:
+		line 60 in file "mcc_generated_files/adc.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    9
+ This function calls:
+		Nothing
+ This function is called by:
+		_SYSTEM_Initialize
+ This function uses a non-reentrant model
+
+
+ *************** function _InitSPI *****************
+ Defined at:
+		line 441 in file "zigbee.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:   10
+ This function calls:
+		_delay
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _delay *****************
+ Defined at:
+		line 471 in file "zigbee.c"
+ Parameters:    Size  Location     Type
+  dly             2    0[BANK1 ] unsigned int 
+ Auto vars:     Size  Location     Type
+  l               2    2[BANK1 ] unsigned int 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       4       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        4 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    9
+ This function calls:
+		Nothing
+ This function is called by:
+		_InitSPI
+ This function uses a non-reentrant model
+
+
+ *************** function _Display_LED_Indication *****************
+ Defined at:
+		line 477 in file "2_April_LedDisplayMain.c"
+ Parameters:    Size  Location     Type
+  Id              1    wreg     unsigned char 
+ Auto vars:     Size  Location     Type
+  Id              1    0[BANK1 ] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       1       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       1       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        1 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    9
+ This function calls:
+		Nothing
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _Clear_Data *****************
+ Defined at:
+		line 4 in file "zigbee.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+  n               2    0[BANK1 ] unsigned int 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    9
+ This function calls:
+		Nothing
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _INTERRUPT_InterruptManagerLow *****************
+ Defined at:
+		line 69 in file "2_April_LedDisplayMain.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, pclath, tosl, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0      21       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0      21       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:       21 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    8
+ This function calls:
+		_TMR0_ISR
+		_write_TX_normal_FIFO
+		i1_Delay_ms
+ This function is called by:
+		Interrupt level 1
+ This function uses a non-reentrant model
+
+
+ *************** function _write_TX_normal_FIFO *****************
+ Defined at:
+		line 334 in file "zigbee.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+  i               1   15[BANK0 ] unsigned char 
+  n               1   14[BANK0 ] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       5       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       7       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        7 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    7
+ This function calls:
+		_Xor_check
+		_set_not_ACK
+		_set_not_encrypt
+		_start_transmit
+		i1_Delay_ms
+		i1_write_ZIGBEE_long
+ This function is called by:
+		_INTERRUPT_InterruptManagerLow
+ This function uses a non-reentrant model
+
+
+ *************** function i1_write_ZIGBEE_long *****************
+ Defined at:
+		line 414 in file "zigbee.c"
+ Parameters:    Size  Location     Type
+  address         2    2[BANK0 ] unsigned int 
+  data_r          1    4[BANK0 ] unsigned char 
+ Auto vars:     Size  Location     Type
+  write_ZIGBEE    1    8[BANK0 ] unsigned char 
+  write_ZIGBEE    1    7[BANK0 ] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       3       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       7       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        7 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    5
+ This function calls:
+		i1_SPI_Write
+ This function is called by:
+		_write_TX_normal_FIFO
+ This function uses a non-reentrant model
+
+
+ *************** function i1_Delay_ms *****************
+ Defined at:
+		line 475 in file "zigbee.c"
+ Parameters:    Size  Location     Type
+  time            2    0[BANK0 ] unsigned int 
+ Auto vars:     Size  Location     Type
+  Delay_ms        2    2[BANK0 ] unsigned int 
+  Delay_ms        2    0        unsigned int 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       4       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        4 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    4
+ This function calls:
+		Nothing
+ This function is called by:
+		_write_TX_normal_FIFO
+		_INTERRUPT_InterruptManagerLow
+ This function uses a non-reentrant model
+
+
+ *************** function _start_transmit *****************
+ Defined at:
+		line 382 in file "zigbee.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    6
+ This function calls:
+		_read_ZIGBEE_short
+		i1_write_ZIGBEE_short
+ This function is called by:
+		_write_TX_normal_FIFO
+ This function uses a non-reentrant model
+
+
+ *************** function _read_ZIGBEE_short *****************
+ Defined at:
+		line 403 in file "zigbee.c"
+ Parameters:    Size  Location     Type
+  address         1    wreg     unsigned char 
+ Auto vars:     Size  Location     Type
+  address         1    3[BANK0 ] unsigned char 
+  data_r          1    2[BANK0 ] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      unsigned char 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    5
+ This function calls:
+		_SPI_Read
+		i1_SPI_Write
+ This function is called by:
+		_start_transmit
+ This function uses a non-reentrant model
+
+
+ *************** function _SPI_Read *****************
+ Defined at:
+		line 463 in file "zigbee.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+  TempVar         1    0[BANK0 ] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      unsigned char 
+ Registers used:
+		wreg, status,2
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        1 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    4
+ This function calls:
+		Nothing
+ This function is called by:
+		_read_ZIGBEE_short
+ This function uses a non-reentrant model
+
+
+ *************** function _set_not_encrypt *****************
+ Defined at:
+		line 375 in file "zigbee.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+  temp            1    4[BANK0 ] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        1 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    6
+ This function calls:
+		i1_write_ZIGBEE_short
+ This function is called by:
+		_write_TX_normal_FIFO
+ This function uses a non-reentrant model
+
+
+ *************** function _set_not_ACK *****************
+ Defined at:
+		line 369 in file "zigbee.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+  temp            1    4[BANK0 ] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        1 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    6
+ This function calls:
+		i1_write_ZIGBEE_short
+ This function is called by:
+		_write_TX_normal_FIFO
+ This function uses a non-reentrant model
+
+
+ *************** function i1_write_ZIGBEE_short *****************
+ Defined at:
+		line 396 in file "zigbee.c"
+ Parameters:    Size  Location     Type
+  address         1    wreg     unsigned char 
+  data_r          1    2[BANK0 ] unsigned char 
+ Auto vars:     Size  Location     Type
+  address         1    3[BANK0 ] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    5
+ This function calls:
+		i1_SPI_Write
+ This function is called by:
+		_set_not_ACK
+		_set_not_encrypt
+		_start_transmit
+ This function uses a non-reentrant model
+
+
+ *************** function i1_SPI_Write *****************
+ Defined at:
+		line 457 in file "zigbee.c"
+ Parameters:    Size  Location     Type
+  command         1    wreg     unsigned char 
+ Auto vars:     Size  Location     Type
+  command         1    1[BANK0 ] unsigned char 
+  SPI_Write       1    0[BANK0 ] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    4
+ This function calls:
+		Nothing
+ This function is called by:
+		_read_ZIGBEE_short
+		i1_write_ZIGBEE_short
+		i1_write_ZIGBEE_long
+ This function uses a non-reentrant model
+
+
+ *************** function _Xor_check *****************
+ Defined at:
+		line 501 in file "zigbee.c"
+ Parameters:    Size  Location     Type
+  data_value      2    0[BANK0 ] PTR unsigned char 
+		 -> DATA_TX(3), DATA_RX(5), 
+  length          1    2[BANK0 ] unsigned char 
+ Auto vars:     Size  Location     Type
+  xor             2    6[BANK0 ] unsigned short 
+  xor_value       2    4[BANK0 ] unsigned short 
+ Return value:  Size  Location     Type
+                  2    0[BANK0 ] unsigned short 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       3       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       4       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       8       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        8 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    4
+ This function calls:
+		Nothing
+ This function is called by:
+		_write_TX_normal_FIFO
+ This function uses a non-reentrant model
+
+
+ *************** function _TMR0_ISR *****************
+ Defined at:
+		line 128 in file "mcc_generated_files/tmr0.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, pclath, tosl, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    6
+ This function calls:
+		_TMR0_CallBack
+ This function is called by:
+		_INTERRUPT_InterruptManagerLow
+ This function uses a non-reentrant model
+
+
+ *************** function _TMR0_CallBack *****************
+ Defined at:
+		line 144 in file "mcc_generated_files/tmr0.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, pclath, tosl, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    5
+ This function calls:
+		Absolute function
+		_TMR0_DefaultInterruptHandler
+ This function is called by:
+		_TMR0_ISR
+ This function uses a non-reentrant model
+
+
+ *************** function _TMR0_DefaultInterruptHandler *****************
+ Defined at:
+		line 158 in file "mcc_generated_files/tmr0.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		None
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    4
+ This function calls:
+		Nothing
+ This function is called by:
+		_TMR0_Initialize
+		_TMR0_CallBack
+ This function uses a non-reentrant model
+
+
+ *************** function _INTERRUPT_InterruptManagerHigh *****************
+ Defined at:
+		line 45 in file "2_April_LedDisplayMain.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, pclath, tosl, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:         20       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:        20       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:       20 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		_INT0_ISR
+		_Zigbee_data_Store_Buffer
+		_read_RX_FIFO
+		i2_Xor_check
+		i2_read_ZIGBEE_short
+ This function is called by:
+		Interrupt level 2
+ This function uses a non-reentrant model
+
+
+ *************** function i2_read_ZIGBEE_short *****************
+ Defined at:
+		line 403 in file "zigbee.c"
+ Parameters:    Size  Location     Type
+  address         1    wreg     unsigned char 
+ Auto vars:     Size  Location     Type
+  address         1    2[COMRAM] unsigned char 
+  read_ZIGBEE_    1    3[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      unsigned char 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    1
+ This function calls:
+		i2_SPI_Read
+		i2_SPI_Write
+ This function is called by:
+		_INTERRUPT_InterruptManagerHigh
+ This function uses a non-reentrant model
+
+
+ *************** function i2_Xor_check *****************
+ Defined at:
+		line 501 in file "zigbee.c"
+ Parameters:    Size  Location     Type
+  data_value      2    0[COMRAM] PTR unsigned char 
+		 -> DATA_TX(3), DATA_RX(5), 
+  length          1    2[COMRAM] unsigned char 
+ Auto vars:     Size  Location     Type
+  Xor_check       2    6[COMRAM] unsigned short 
+  Xor_check       2    4[COMRAM] unsigned short 
+ Return value:  Size  Location     Type
+                  2    0[COMRAM] unsigned short 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         3       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         4       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         8       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        8 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_INTERRUPT_InterruptManagerHigh
+ This function uses a non-reentrant model
+
+
+ *************** function _read_RX_FIFO *****************
+ Defined at:
+		line 10 in file "zigbee.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+  i               1   15[COMRAM] unsigned char 
+  temp            1   14[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          5       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         7       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        7 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    2
+ This function calls:
+		_read_ZIGBEE_long
+		i2_write_ZIGBEE_short
+ This function is called by:
+		_INTERRUPT_InterruptManagerHigh
+ This function uses a non-reentrant model
+
+
+ *************** function i2_write_ZIGBEE_short *****************
+ Defined at:
+		line 396 in file "zigbee.c"
+ Parameters:    Size  Location     Type
+  address         1    wreg     unsigned char 
+  data_r          1    2[COMRAM] unsigned char 
+ Auto vars:     Size  Location     Type
+  address         1    3[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    1
+ This function calls:
+		i2_SPI_Write
+ This function is called by:
+		_read_RX_FIFO
+ This function uses a non-reentrant model
+
+
+ *************** function _read_ZIGBEE_long *****************
+ Defined at:
+		line 425 in file "zigbee.c"
+ Parameters:    Size  Location     Type
+  address         2    2[COMRAM] unsigned int 
+ Auto vars:     Size  Location     Type
+  address_low     1    8[COMRAM] unsigned char 
+  address_high    1    7[COMRAM] unsigned char 
+  data_r          1    6[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      unsigned char 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         3       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         7       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        7 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    1
+ This function calls:
+		i2_SPI_Read
+		i2_SPI_Write
+ This function is called by:
+		_read_RX_FIFO
+ This function uses a non-reentrant model
+
+
+ *************** function i2_SPI_Write *****************
+ Defined at:
+		line 457 in file "zigbee.c"
+ Parameters:    Size  Location     Type
+  command         1    wreg     unsigned char 
+ Auto vars:     Size  Location     Type
+  command         1    1[COMRAM] unsigned char 
+  SPI_Write       1    0[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_read_ZIGBEE_long
+		i2_write_ZIGBEE_short
+		i2_read_ZIGBEE_short
+ This function uses a non-reentrant model
+
+
+ *************** function i2_SPI_Read *****************
+ Defined at:
+		line 463 in file "zigbee.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+  SPI_Read        1    0[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      unsigned char 
+ Registers used:
+		wreg, status,2
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        1 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_read_ZIGBEE_long
+		i2_read_ZIGBEE_short
+ This function uses a non-reentrant model
+
+
+ *************** function _Zigbee_data_Store_Buffer *****************
+ Defined at:
+		line 469 in file "2_April_LedDisplayMain.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+  a               1    0[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, prodl, prodh
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        1 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_INTERRUPT_InterruptManagerHigh
+ This function uses a non-reentrant model
+
+
+ *************** function _INT0_ISR *****************
+ Defined at:
+		line 32 in file "mcc_generated_files/ext_int.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, pclath, tosl, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    2
+ This function calls:
+		_INT0_CallBack
+ This function is called by:
+		_INTERRUPT_InterruptManagerHigh
+ This function uses a non-reentrant model
+
+
+ *************** function _INT0_CallBack *****************
+ Defined at:
+		line 41 in file "mcc_generated_files/ext_int.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, pclath, tosl, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    1
+ This function calls:
+		Absolute function
+		_INT0_DefaultInterruptHandler
+ This function is called by:
+		_INT0_ISR
+ This function uses a non-reentrant model
+
+
+ *************** function _INT0_DefaultInterruptHandler *****************
+ Defined at:
+		line 54 in file "mcc_generated_files/ext_int.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		None
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_EXT_INT_Initialize
+		_INT0_CallBack
+ This function uses a non-reentrant model
+
+
+
+MODULE INFORMATION
+
+Module		Function		Class		Link	Load	Size
+2_April_LedDisplayMain.c
+		_Display_LED_Indication		CODE           	194E	0000	185
+		_main          		CODE           	1292	0000	507
+		_INTERRUPT_InterruptManagerLow		CODE           	0018	0000	259
+		_INTERRUPT_InterruptManagerHigh		CODE           	0008	0000	227
+		_Zigbee_data_Store_Buffer		CODE           	1F28	0000	53
+
+2_April_LedDisplayMain.c estimated size: 1231
+
+mcc_generated_files/interrupt_manager.c
+		_INTERRUPT_Initialize		CODE           	233C	0000	7
+
+mcc_generated_files/interrupt_manager.c estimated size: 7
+
+mcc_generated_files/tmr0.c
+		_TMR0_SetInterruptHandler		CODE           	230C	0000	15
+		_TMR0_DefaultInterruptHandler		CODE           	2342	0000	3
+		_TMR0_CallBack 		CODE           	20C2	0000	37
+		_TMR0_ISR      		CODE           	2328	0000	13
+		_TMR0_Initialize		CODE           	1FB8	0000	43
+
+mcc_generated_files/tmr0.c estimated size: 111
+
+mcc_generated_files/pin_manager.c
+		_PIN_MANAGER_Initialize		CODE           	1CF8	0000	69
+
+mcc_generated_files/pin_manager.c estimated size: 69
+
+mcc_generated_files/adc.c
+		_ADC_Initialize		CODE           	222C	0000	23
+
+mcc_generated_files/adc.c estimated size: 23
+
+zigbee.c
+		_enable_interrupt		CODE           	22FE	0000	15
+		_delay         		CODE           	214E	0000	31
+		_write_ZIGBEE_short		CODE           	2056	0000	37
+		_set_not_encrypt		CODE           	2242	0000	23
+		_read_ZIGBEE_short		CODE           	200A	0000	41
+		_set_channel   		CODE           	148C	0000	449
+		_set_long_address		CODE           	1EF4	0000	53
+		_write_TX_normal_FIFO		CODE           	164C	0000	353
+		_read_RX_FIFO  		CODE           	1010	0000	643
+		_SPI_Write     		CODE           	22A8	0000	19
+		_set_PAN_ID    		CODE           	1F8A	0000	47
+		_Delay_ms      		CODE           	21A6	0000	29
+		_set_frame_format_filter		CODE           	1A9C	0000	147
+		_set_reception_mode		CODE           	1B2E	0000	113
+		_start_transmit		CODE           	1E80	0000	63
+		_write_ZIGBEE_long		CODE           	1BFE	0000	85
+		_set_RSSI_mode 		CODE           	1D7E	0000	67
+		_set_not_ACK   		CODE           	2258	0000	23
+		_init_ZIGBEE_nonbeacon		CODE           	2032	0000	37
+		_SPI_Read      		CODE           	22BA	0000	19
+		_InitSPI       		CODE           	207A	0000	37
+		_init_ZIGBEE_basic		CODE           	1A06	0000	151
+		_RF_reset      		CODE           	1FE2	0000	41
+		_Xor_check     		CODE           	1DC0	0000	67
+		_set_TX_power  		CODE           	1D3C	0000	67
+		_enable_PLL    		CODE           	226E	0000	21
+		_set_WAKE_from_pin		CODE           	218A	0000	29
+		_Clear_Data    		CODE           	1EBE	0000	55
+		_pin_wake      		CODE           	2296	0000	19
+		_read_ZIGBEE_long		CODE           	1CA6	0000	83
+		_nonbeacon_PAN_coordinator_device		CODE           	1E42	0000	63
+		_pin_reset     		CODE           	210A	0000	35
+		_set_short_address		CODE           	1F5C	0000	47
+		_set_CCA_mode  		CODE           	1888	0000	199
+
+zigbee.c estimated size: 3208
+
+mcc_generated_files/ext_int.c
+		_INT0_SetInterruptHandler		CODE           	231A	0000	15
+		_EXT_INT_Initialize		CODE           	2212	0000	27
+		_INT0_DefaultInterruptHandler		CODE           	2344	0000	3
+		_INT0_CallBack 		CODE           	20E6	0000	37
+		_INT0_ISR      		CODE           	2334	0000	9
+
+mcc_generated_files/ext_int.c estimated size: 91
+
+shared
+		_R3            		SMALLCONST     	1007	0000	4
+		i1_write_ZIGBEE_long		CODE           	1C52	0000	85
+		i1_SPI_Write   		CODE           	22CC	0000	19
+		i2_SPI_Write   		CODE           	22DE	0000	17
+		_DATA_LENGHT   		SMALLCONST     	100E	0000	2
+		_Vcc           		SMALLCONST     	1004	0000	4
+		i2_read_ZIGBEE_short		CODE           	212C	0000	35
+		i2_Xor_check   		CODE           	1E02	0000	65
+		__initialization		CODE           	1B9E	0000	87
+		i1_write_ZIGBEE_short		CODE           	209E	0000	37
+		_HEADER_LENGHT 		SMALLCONST     	100D	0000	2
+		i1_Delay_ms    		CODE           	21C2	0000	29
+		i2_write_ZIGBEE_short		CODE           	216C	0000	31
+		_Resistance0   		SMALLCONST     	1001	0000	4
+		_AdcRef        		SMALLCONST     	100A	0000	4
+		i2_SPI_Read    		CODE           	22EE	0000	17
+
+shared estimated size: 442
+
+mcc_generated_files/mcc.c
+		_OSCILLATOR_Initialize		CODE           	2282	0000	21
+		_SYSTEM_Initialize		CODE           	21F8	0000	27
+
+mcc_generated_files/mcc.c estimated size: 48
+
